@@ -325,6 +325,12 @@ a{
     border-radius: 20px;
 }
 
+form input{
+    font-size: medium;
+}
+form select{
+    font-size: medium;
+}
 form button{
     margin-top: 10px;
     font-size: small;
