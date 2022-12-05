@@ -51,59 +51,54 @@
     </header>
     <main class="contenido-main">
         <h1 class="display-1 text-center mt-1 ">Envíanos un mensaje</h1>
-        <div class="grid-main">
-            <div class="cuadro-form">
-                <img src="../assets/img/contactos/perro-correo.png" alt="perro enviando correo">
-                <form>
-                    <legend>Datos Personales</legend>
-                    <label for="nombre">Nombre
-                    </label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
-                    
-                    <label for="apellido">Apellido
-                    </label>
-                    <input type="text" id="apellido"  name="apellido" required placeholder="Apellido">
-                    
-                    <label for="telefono">Telefono
-                    </label>
-                    <input type="number" id="telefono" name="telefono" placeholder="+5491111111111">
-                    
-                    <label for="email">email
-                    </label>
-                    <input type="email" id="email" name="email" required placeholder="email@email.com">
-                    
-                    <legend>Opinion</legend>
-                    <label for="textBox">Comentario
-                    </label>
-                    <textarea id="textBox" name="textBox" cols="30" rows="10" required></textarea>
-                    
-                    <button class="botonForm" type="submit">Enviar</button>
-                    <button class="botonForm" type="reset">Reset</button>
-                    
-                    <br><br>
-                    <label for="opciones">Tu mascota?</label>
-                    <select name="opciones" id="opciones">
-                        <option value="ninguno">Ninguno</option>
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="perro y gato">Perro y Gato</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </form>
-                <hr>
-                <section class="ubicacion">
-                    <label for="">Ubicacion</label>
-                    <p class="parrafoMapa">
-                        Estamos ubicados a metros de la Plaza Roque Saenz Peña.
-                    </p>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4511.733027451413!2d-58.46932296063571!3d-34.6102488989922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f996629f1f%3A0x4b29dbeec65d67f0!2sPlaza%20Dr.%20Roque%20S%C3%A1enz%20Pe%C3%B1a!5e0!3m2!1ses-419!2sar!4v1667086917576!5m2!1ses-419!2sar" width="1600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </section>
-            </div>
             
-        
-            
+        <div class="cuadro-form">
+            <!-- <img src="../assets/img/contactos/perro-correo.png" alt="perro enviando correo"> -->
+            <section class="ubicacion">
+                <label for="">Ubicacion</label>
+                <p class="parrafoMapa">
+                    Estamos ubicados a metros de la Plaza Roque Saenz Peña.
+                </p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4511.733027451413!2d-58.46932296063571!3d-34.6102488989922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f996629f1f%3A0x4b29dbeec65d67f0!2sPlaza%20Dr.%20Roque%20S%C3%A1enz%20Pe%C3%B1a!5e0!3m2!1ses-419!2sar!4v1667086917576!5m2!1ses-419!2sar" width="1600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <form>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre
+                </label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                
+                <label for="apellido">Apellido
+                </label>
+                <input type="text" id="apellido"  name="apellido" required placeholder="Apellido">
+                
+                <label for="telefono">Telefono
+                </label>
+                <input type="number" id="telefono" name="telefono" placeholder="+5491111111111">
+                
+                <label for="email">email
+                </label>
+                <input type="email" id="email" name="email" required placeholder="email@email.com">
+                
+                <legend>Opinion</legend>
+                <label for="textBox">Comentario
+                </label>
+                <textarea id="textBox" name="textBox" cols="30" rows="10" required></textarea>
+                
+                <button class="botonForm" type="submit">Enviar</button>
+                <button class="botonForm" type="reset">Reset</button>
+                
+                <label for="opciones">Tu mascota?</label>
+                <select name="opciones" id="opciones">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="perro y gato">Perro y Gato</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </form>
+
         </div>
     </main>
 
