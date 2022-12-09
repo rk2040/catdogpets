@@ -1,0 +1,705 @@
+/*  Colores logo para la pagina
+    casiNegro   #2F2F3C
+    blanco      #F7F7F7
+    naranja     #FF6600
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;500;600;700;800&family=Pridi:wght@300;400;500;600;700&display=swap"); /* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/* Font size: 10px = 1em */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../assets/img/background/patitasYcorazones02.svg);
+}
+
+h1, h2, h3 {
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 6em;
+  color: #FF6600;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: x-small;
+  font-weight: 300;
+  width: auto;
+  margin: 10px;
+}
+
+legend {
+  font-size: x-large;
+}
+
+label {
+  font-size: medium;
+}
+
+/* Separadores */
+.grid-main hr {
+  background-color: blueviolet;
+  opacity: 0.8;
+  height: 1em;
+  width: 75%;
+  border-radius: 50%;
+  margin: 20px auto 20px auto;
+}
+
+/* extend */
+.box-color-parrafo, .sobre-nosotros, .antes-de-adoptar, .parrafo-index {
+  border: solid #2F2F3C;
+  border-radius: 20px;
+  margin: 10px 10px 40px 10px;
+  background-color: rgba(138, 43, 226, 0.2);
+}
+.box-color-parrafo p, .sobre-nosotros p, .antes-de-adoptar p, .parrafo-index p {
+  margin: 0 40px 0 40px;
+}
+
+/* Fin extend */
+/* mixin */
+/* Fin mixin */
+/* ---------- Inicio del header ---------- */
+header {
+  background-color: #FF6600;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 10px;
+  width: 100%;
+}
+header nav {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+header nav ul li {
+  font-size: medium;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.logoNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 15em;
+}
+
+.texto-logo {
+  color: #2F2F3C;
+  font-size: 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Inicio animacion */
+.logoNav {
+  transition-property: all;
+  -webkit-animation: agranda-logo 1s;
+          animation: agranda-logo 1s;
+}
+
+@-webkit-keyframes agranda-logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes agranda-logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+.logoNav:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.1);
+  filter: drop-shadow(6px 6px 2px black);
+}
+
+.navbar a {
+  transition-property: all;
+  border-radius: 30%;
+}
+
+.navbar a:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.3);
+  filter: drop-shadow(6px 6px 2px black);
+}
+
+@-webkit-keyframes agranda-nav {
+  50% {
+    background-color: blueviolet;
+    opacity: 0.6;
+  }
+}
+
+@keyframes agranda-nav {
+  50% {
+    background-color: blueviolet;
+    opacity: 0.6;
+  }
+}
+/* Fin animacion */
+/* ---------- Fin del header ---------- */
+/* ---------- Inicio del footer ---------- */
+footer {
+  background-color: #FF6600;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.nav-footer, .redes-footer, ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+.nav-footer a, .redes-footer a, ul li a {
+  font-size: medium;
+  color: #2F2F3C;
+  text-decoration: none;
+}
+.nav-footer svg, .redes-footer svg, ul li svg {
+  margin-top: 10px;
+  color: #2F2F3C;
+}
+.nav-footer a:hover, .redes-footer a:hover, ul li a:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transform: scale(1.3);
+  filter: drop-shadow(6px 6px 2px black);
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.redes-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.grid-footer label {
+  font-size: large;
+}
+
+.derechos {
+  font-size: medium;
+}
+
+/* ---------- Fin del footer ---------- */
+/* ---------- Inicio del main ---------- */
+.grid-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* extend */
+.parrafo-index {
+  margin-top: 60px;
+}
+.parrafo-index p {
+  padding: 60px;
+}
+
+/* Fin extend */
+.video-home iframe {
+  max-width: 100%;
+  padding: 10px;
+}
+
+/* ---------- Fin del main ---------- */
+/* --------- Pagina Cuidados --------- */
+.grid-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/* extend */
+.antes-de-adoptar {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Fin extend */
+.grid-main-mascotas img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 20px;
+}
+
+/* --------- Fin Pagina Cuidados --------- */
+/* extend */
+.sobre-nosotros p {
+  padding: 40px;
+}
+
+/* Fin extend */
+/* --------- Pagina Productos --------- */
+.grid-main-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  max-width: auto;
+}
+.grid-main-productos h1 {
+  margin-bottom: 100px;
+}
+.grid-main-productos p {
+  font-size: 2em;
+  margin: 5px;
+}
+.grid-main-productos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30%;
+  border: #2F2F3C solid 5px;
+}
+
+.articulo {
+  max-width: 20em;
+  margin: 40px 10px 40px 10px;
+  flex-wrap: wrap;
+}
+
+.imgProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 90px;
+}
+
+.cantidad {
+  width: 3em;
+  height: auto;
+  font-size: 2em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.botonComprar {
+  width: 5em;
+  height: auto;
+  font-size: 2em;
+}
+
+.botonComprar:hover {
+  color: #F7F7F7;
+  background-color: #2F2F3C;
+}
+
+/* --------- Fin Pagina Productos --------- */
+/* --------- Pagina Contactos --------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cuadro-form {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.cuadro-form form {
+  max-width: 100%;
+  height: auto;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background-color: #FF6600;
+  opacity: 0.8;
+  padding: 25px;
+  border-radius: 20px;
+}
+.cuadro-form .ubicacion {
+  background-color: #FF6600;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+.cuadro-form section {
+  min-width: none;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form input {
+  font-size: medium;
+}
+
+form textarea {
+  font-size: medium;
+}
+
+form select {
+  font-size: medium;
+}
+
+form button {
+  margin-top: 10px;
+  font-size: small;
+  padding: 5px;
+}
+
+.cuadro-form hr {
+  margin: 50px 0 20px 0;
+}
+
+.ubicacion iframe {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 25px;
+  border-radius: 40px;
+}
+
+.ubicacion label {
+  font-size: x-large;
+}
+
+.botonForm:hover {
+  color: #F7F7F7;
+  background-color: #2F2F3C;
+}
+
+/* --------- Fin Pagina Contactos --------- */
+/* Inicio media queries generales */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+p {
+  font-size: small;
+}
+
+/* Celulares y tabletas chicas de 576 a 767px */
+@media (min-width: 576px) {
+  p {
+    font-size: medium;
+    font-weight: 500;
+  }
+}
+/* Notebook y Pc de escritorio 1024px en adelante */
+@media (min-width: 1024px) {
+  p {
+    font-size: large;
+  }
+}
+/* Fin media queries generales */
+/* Inicio media queries header */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-header {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5px;
+  grid-template-areas: "logoNav" "texto-logo" "navbar";
+  /* Tablet de 10" 768 a 1023px */
+}
+@media (min-width: 768px) {
+  .grid-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: flex-end;
+    grid-template-areas: ".    texto-logo  ." "logoNav    navbar      .";
+  }
+}
+
+/* Fin media queries header */
+/* Inicio media queries footer */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-footer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  grid-template-areas: "grid-footer" "redes" "derechos";
+  /* Celulares y tabletas chicas de 576 a 767px */
+}
+@media (min-width: 576px) {
+  .grid-footer .nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Fin media queries footer */
+/* Inicio media queries para html index */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-main {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-areas: "titulo-main" "carrousel" "separador" "video-home" "video-home";
+  /* Celulares y tabletas chicas de 576 a 767px */
+  /* Tablet de 10" 768 a 1023px */
+}
+@media (min-width: 576px) {
+  .grid-main .carrousel p {
+    margin: 10px 60px 10px 60px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-main p {
+    font-weight: 600;
+  }
+}
+
+/* Fin media queries para html index */
+/* Inicio media queries para html cuidados */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.antes-de-adoptar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-template-areas: "img" "p";
+  /* Tablet de 10" 768 a 1023px */
+}
+@media (min-width: 768px) {
+  .antes-de-adoptar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "p  img";
+  }
+}
+
+/* Fin media queries para html cuidados */
+/* Inicio media queries para html nosotros */
+/* Celulares y tabletas chicas de 576 a 767px */
+@media (min-width: 576px) {
+  .grid-main-nosotros p {
+    margin: 10px 60px 10px 60px;
+  }
+}
+/* Fin media queries para html nosotros */
+/* Inicio media queries para html productos */
+/* Celulares y tabletas chicas de 576 a 767px */
+@media (min-width: 576px) {
+  .imgProductos {
+    width: 90%;
+  }
+}
+/* Tablet de 10" 768 a 1023px */
+@media (min-width: 768px) {
+  .imgProductos {
+    width: 80%;
+  }
+}
+/* Notebook y Pc de escritorio 1024px en adelante */
+@media (min-width: 1024px) {
+  .imgProductos {
+    width: 70%;
+  }
+}
+/* Fin media queries para html productos */
+/* Inicio media queries para html contacto */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.cuadro-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  grid-template-areas: "form" "ubicacion";
+  /* Tablet de 10" 768 a 1023px */
+}
+@media (min-width: 768px) {
+  .cuadro-form {
+    padding: 60px;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ubicacion  form";
+  }
+}
+
+/* Fin media queries para html contacto */
+/* ---------- Inicio a declarar las grid area ----------*/
+/* ---------- Inicio a declarar las grid area header ----------*/
+header {
+  grid-area: header;
+}
+
+.logoNav {
+  grid-area: logoNav;
+}
+
+.texto-logo {
+  grid-area: texto-logo;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+/* ---------- Inicio a declarar las grid area index ----------*/
+.contenido-main {
+  grid-area: contenido-main;
+}
+
+.grid-main {
+  grid-area: grid-main;
+}
+
+.titulo-main {
+  grid-area: titulo-main;
+}
+
+.carrousel {
+  grid-area: carrousel;
+}
+
+.video-home {
+  grid-area: video-home;
+}
+
+hr {
+  grid-area: separador;
+}
+
+/* ---------- Inicio a declarar las grid area footer----------*/
+.grid-footer {
+  grid-area: grid-footer;
+}
+
+.nav-footer {
+  grid-area: nav-footer;
+}
+
+.redes {
+  grid-area: redes;
+}
+
+.derechos {
+  grid-area: derechos;
+}
+
+/* grid areas de cuidados */
+.grid-main-mascotas {
+  grid-area: grid-main-mascotas;
+}
+
+.antes-de-adoptar {
+  grid-area: antes-de-adoptar;
+}
+
+/* grid areas de productos */
+.grid-main-productos {
+  grid-area: grid-main-productos;
+}
+
+.imgProductos {
+  grid-area: img-productos;
+}
+
+.titulo-productos {
+  grid-area: titulo-productos;
+}
+
+.imgProductos .articulo {
+  grid-area: articulo;
+}
+
+.datosArticulo {
+  grid-area: datos-articulo;
+}
+
+/* grid areas de contactos */
+.ubicacion {
+  grid-area: ubicacion;
+}
+
+form {
+  grid-area: form;
+}
+
+/* ---------- Fin declararacion de las grid area ----------*//*# sourceMappingURL=style.css.map */

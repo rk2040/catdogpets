@@ -7,8 +7,9 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- mi propio css -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
+    <meta name="description" content="Contacta con nosotros y dejanos tu consulta o comentario. Seguinos en nuestras redes sociales para estar al tanto de todas las novedades">
     <title>Contacto</title>
     <link rel="icon" href="../assets/img/logos/logoNav.ico">
 </head>
@@ -51,14 +52,16 @@
     </header>
     <main class="contenido-main">
         <h1 class="display-1 text-center mt-1 ">Envíanos un mensaje</h1>
+        <img class="img-contacto" src="../assets/img/contactos/perro-compu01.png" alt="perro escribiendo un email">
             
         <div class="cuadro-form">
-            <!-- <img src="../assets/img/contactos/perro-correo.png" alt="perro enviando correo"> -->
             <section class="ubicacion">
                 <label for="">Ubicacion</label>
-                <p class="parrafoMapa">
-                    Estamos ubicados a metros de la Plaza Roque Saenz Peña.
-                </p>
+                <div class="parrafoMapa">
+                    <p>Estamos ubicados a metros de la Plaza Roque Saenz Peña.</p>
+                    <p>Lineas de colectivo que pasan por la zona:</p>
+                    <p>34a 34b - 47b - 110a 110b - 113a - 166a 166b</p>
+                </div>
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4511.733027451413!2d-58.46932296063571!3d-34.6102488989922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f996629f1f%3A0x4b29dbeec65d67f0!2sPlaza%20Dr.%20Roque%20S%C3%A1enz%20Pe%C3%B1a!5e0!3m2!1ses-419!2sar!4v1667086917576!5m2!1ses-419!2sar" width="1600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -67,11 +70,11 @@
                 <legend>Datos Personales</legend>
                 <label for="nombre">Nombre
                 </label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese nombre">
                 
                 <label for="apellido">Apellido
                 </label>
-                <input type="text" id="apellido"  name="apellido" required placeholder="Apellido">
+                <input type="text" id="apellido"  name="apellido" required placeholder="Ingrese apellido">
                 
                 <label for="telefono">Telefono
                 </label>
@@ -79,7 +82,7 @@
                 
                 <label for="email">email
                 </label>
-                <input type="email" id="email" name="email" required placeholder="email@email.com">
+                <input type="email" id="email" name="email" required placeholder="Ingrese email@email.com">
                 
                 <legend>Opinion</legend>
                 <label for="textBox">Comentario

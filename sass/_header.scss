@@ -1,0 +1,97 @@
+/* ---------- Inicio del header ---------- */
+header{
+    background-color: $color-principal;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 10px;
+    width: 100%;
+
+    nav{
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+
+        ul li{
+            font-size: medium;
+            list-style-type: none;
+            padding: 5px;
+        }
+    }
+}
+
+.logoNav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15em;
+}
+
+.texto-logo{
+    color: #2F2F3C;
+    font-size: 6em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-fluid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Inicio animacion */
+.logoNav{
+    transition-property: all;
+    animation: agranda-logo 1s ;
+}
+@keyframes agranda-logo{
+    0%{
+        opacity: 0.0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+}
+.logoNav:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.1);
+    filter: drop-shadow(6px 6px 2px black);
+}
+.navbar a{
+    transition-property: all;
+    border-radius: 30%;
+}
+.navbar a:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.3);
+    filter: drop-shadow(6px 6px 2px black);
+}
+@keyframes agranda-nav{
+    50%{
+        background-color: $color-detalles;
+        opacity: 0.6;
+    }
+}
+/* Fin animacion */
+
+/* ---------- Fin del header ---------- */

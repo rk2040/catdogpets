@@ -1,0 +1,97 @@
+@import "variablesGlobales";
+@import "fuentes";
+@import "generales";
+@import "header";
+@import "footer";
+@import "index";
+@import "cuidados";
+@import "nosotros";
+@import "productos";
+@import "contacto";
+@import "media-queries";
+
+
+/* ---------- Inicio a declarar las grid area ----------*/
+/* ---------- Inicio a declarar las grid area header ----------*/
+header{
+    grid-area: header;
+}
+.logoNav{
+    grid-area: logoNav;
+}
+.texto-logo{
+    grid-area: texto-logo;
+}
+.navbar{
+    grid-area: navbar;
+}
+
+/* ---------- Inicio a declarar las grid area index ----------*/
+.contenido-main{
+    grid-area: contenido-main;
+}
+.grid-main{
+    grid-area: grid-main;
+}
+.titulo-main{
+    grid-area: titulo-main;
+}
+.carrousel{
+    grid-area: carrousel;
+}
+
+.video-home{
+    grid-area: video-home;
+}
+hr{
+    grid-area: separador;
+}
+
+/* ---------- Inicio a declarar las grid area footer----------*/
+.grid-footer{
+    grid-area: grid-footer;
+}
+.nav-footer{
+    grid-area: nav-footer;
+}
+.redes{
+    grid-area: redes;
+}
+.derechos{
+    grid-area: derechos;
+}
+/* grid areas de cuidados */
+
+.grid-main-mascotas{
+    grid-area: grid-main-mascotas;
+}
+.antes-de-adoptar{
+    grid-area: antes-de-adoptar;
+}
+/* grid areas de productos */
+
+.grid-main-productos{
+    grid-area: grid-main-productos;
+}
+.imgProductos{
+    grid-area: img-productos;
+}
+.titulo-productos{
+    grid-area: titulo-productos;
+}
+.imgProductos .articulo{
+    grid-area: articulo;
+}
+.datosArticulo{
+    grid-area: datos-articulo;
+}
+/* grid areas de contactos */
+
+.ubicacion{
+    grid-area: ubicacion;
+}
+form{
+    grid-area: form;
+}
+/* ---------- Fin declararacion de las grid area ----------*/
+

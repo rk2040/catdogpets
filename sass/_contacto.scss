@@ -1,0 +1,77 @@
+/* --------- Pagina Contactos --------- */
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+.cuadro-form {
+    @include maxw-height(100%, auto);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    form {
+        @include maxw-height(100%, auto);
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background-color: $color-principal;
+        opacity: 0.8;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .ubicacion{
+        background-color:$color-principal;
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+
+    section{
+        min-width: none;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+form input{
+    font-size: medium;
+}
+form textarea{
+    font-size: medium;
+}
+form select{
+    font-size: medium;
+}
+form button{
+    margin-top: 10px;
+    font-size: small;
+    padding: 5px;
+}
+.cuadro-form hr{
+    margin: 50px 0 20px 0;
+}
+
+.ubicacion iframe{
+    @include maxw-maxh(100%, 100%);
+    padding: 25px;
+    border-radius: 40px;
+}
+
+.ubicacion label{
+    font-size: x-large;
+}
+
+.botonForm:hover{
+    color: $color-base;
+    background-color: $color-secundario;
+}
+
+/* --------- Fin Pagina Contactos --------- */
+

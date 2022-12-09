@@ -1,0 +1,25 @@
+/* ---------- Inicio del main ---------- */
+.grid-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* extend */
+.parrafo-index{
+    @extend .box-color-parrafo;
+
+    margin-top: 60px;
+    p{
+        padding: 60px;
+    }
+}
+/* Fin extend */
+
+.video-home iframe{
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* ---------- Fin del main ---------- */

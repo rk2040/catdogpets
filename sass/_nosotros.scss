@@ -1,0 +1,8 @@
+/* extend */
+.sobre-nosotros{
+    @extend .box-color-parrafo;
+
+    p{
+        padding: 40px;
+    }
+}/* Fin extend */

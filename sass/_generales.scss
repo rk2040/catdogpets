@@ -1,0 +1,100 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+/* Font size: 10px = 1em */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../assets/img/background/patitasYcorazones02.svg);
+}
+
+h1, h2, h3{
+    color: $color-detalles;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 6em;
+    color: $color-principal;
+}
+h2{
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: x-small;
+    font-weight: 300;
+    width: auto;
+    margin: 10px;
+}
+
+legend{
+    font-size: x-large;
+}
+label{
+    font-size: medium;
+}
+/* Separadores */
+.grid-main hr{
+    background-color: $color-detalles;
+    opacity: .8;
+    height: 1em;
+    width: 75%;
+    border-radius: 50%;
+    margin: 20px auto 20px auto;
+}
+
+
+
+/* extend */
+.box-color-parrafo{
+    border: solid $color-secundario;
+    border-radius: 20px;
+    margin: 10px 10px 40px 10px;
+    background-color: rgba($color-detalles, 0.2);
+
+    p{
+        margin: 0 40px 0 40px;
+    }
+}
+/* Fin extend */
+
+
+/* mixin */
+@mixin medidas($width, $height)
+{
+    width: $width;
+    height: $height;   
+}
+@mixin maxw-height($max-width, $height)
+{
+    max-width: $max-width;
+    height: $height;   
+}
+@mixin maxw-maxh($max-width, $max-height)
+{
+    max-width: $max-width;
+    max-height: $max-height;   
+}
+/* Fin mixin */

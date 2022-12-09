@@ -1,0 +1,25 @@
+/* --------- Pagina Cuidados --------- */
+.grid-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+/* extend */
+.antes-de-adoptar{
+    @extend .box-color-parrafo;
+    @include maxw-height(100%, auto);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+/* Fin extend */
+
+.grid-main-mascotas img{
+    @include maxw-maxh(100%, 400px);
+    border-radius: 20px;
+}
+/* --------- Fin Pagina Cuidados --------- */

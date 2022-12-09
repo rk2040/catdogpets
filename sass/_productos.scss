@@ -1,0 +1,55 @@
+/* --------- Pagina Productos --------- */
+.grid-main-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    max-width: auto;
+
+    h1{
+        margin-bottom: 100px;
+    }
+
+    p{
+        font-size: 2em;
+        margin: 5px;
+    }
+
+    img{
+        @include maxw-height(100%, auto);
+        border-radius: 30%;
+        border: $color-secundario solid 5px;
+    }
+}
+.articulo{
+    max-width: 20em;
+    margin: 40px 10px 40px 10px;
+    flex-wrap: wrap;
+}
+
+.imgProductos{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 90px;
+}
+.cantidad{
+    @include medidas(3em, auto);
+    font-size: 2em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+ }
+ 
+.botonComprar{
+    @include medidas(5em, auto);
+    font-size: 2em;
+}
+.botonComprar:hover{
+    color: $color-base;
+    background-color: $color-secundario;
+}
+/* --------- Fin Pagina Productos --------- */
+

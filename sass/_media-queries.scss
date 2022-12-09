@@ -1,0 +1,179 @@
+
+/* Inicio media queries generales */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+p{
+    font-size: small;
+}
+/* Celulares y tabletas chicas de 576 a 767px */
+@media(min-width: 576px){
+    p{
+        font-size: medium;
+        font-weight: 500;
+    }
+}
+/* Notebook y Pc de escritorio 1024px en adelante */
+@media(min-width: 1024px){
+    p{
+        font-size: large;
+    }
+}
+/* Fin media queries generales */
+
+
+/* Inicio media queries header */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-header{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    grid-template-areas:
+    "logoNav"
+    "texto-logo"
+    "navbar";
+
+/* Tablet de 10" 768 a 1023px */
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 5px;
+        justify-content: space-around;
+        align-items:flex-end;
+        grid-template-areas:
+        ".    texto-logo  ."
+        "logoNav    navbar      .";
+    }
+}
+/* Fin media queries header */
+
+
+/* Inicio media queries footer */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-footer{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-template-areas:
+    "grid-footer"
+    "redes"
+    "derechos";
+
+/* Celulares y tabletas chicas de 576 a 767px */
+    @media(min-width: 576px){
+        .nav-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+/* Fin media queries footer */
+
+
+/* Inicio media queries para html index */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-main{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas:
+    "titulo-main"
+    "carrousel"
+    "separador"
+    "video-home"
+    "video-home";
+
+/* Celulares y tabletas chicas de 576 a 767px */
+    @media(min-width: 576px){
+        .carrousel p{
+            margin: 10px 60px 10px 60px;
+        }
+    }
+
+/* Tablet de 10" 768 a 1023px */
+    @media(min-width: 768px){
+        p{
+            font-weight: 600;
+        }
+    }
+}
+/* Fin media queries para html index */
+
+
+/* Inicio media queries para html cuidados */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.antes-de-adoptar{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas:
+    "img"
+    "p";  
+
+/* Tablet de 10" 768 a 1023px */
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+        "p  img";
+    }
+}
+/* Fin media queries para html cuidados */
+
+
+/* Inicio media queries para html nosotros */
+/* Celulares y tabletas chicas de 576 a 767px */
+@media(min-width: 576px){
+    .grid-main-nosotros p{
+        margin: 10px 60px 10px 60px;
+    }
+}
+/* Fin media queries para html nosotros */
+
+
+/* Inicio media queries para html productos */
+/* Celulares y tabletas chicas de 576 a 767px */
+@media(min-width: 576px){
+    .imgProductos{
+        width: 90%;
+    }
+}
+
+/* Tablet de 10" 768 a 1023px */
+@media(min-width: 768px){
+    .imgProductos{
+        width: 80%;
+    }
+}
+
+/* Notebook y Pc de escritorio 1024px en adelante */
+@media(min-width: 1024px){
+    .imgProductos{
+        width: 70%;
+    }
+}
+/* Fin media queries para html productos */
+
+
+/* Inicio media queries para html contacto */
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.cuadro-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    grid-template-areas:
+    "form"
+    "ubicacion";  
+
+/* Tablet de 10" 768 a 1023px */
+    @media(min-width: 768px){
+        padding: 60px;
+        gap: 60px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "ubicacion  form";  
+    }
+}
+/* Fin media queries para html contacto */
+
+
