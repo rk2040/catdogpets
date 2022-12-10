@@ -1,3 +1,5 @@
+/* ---------- Inicio con la grilla area ----------*/
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
 
 /* Inicio media queries generales */
 /* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
@@ -89,6 +91,7 @@ p{
         }
     }
 
+
 /* Tablet de 10" 768 a 1023px */
     @media(min-width: 768px){
         p{
@@ -109,7 +112,7 @@ p{
     "img"
     "p";  
 
-/* Tablet de 10" 768 a 1023px */
+/* Celulares y tabletas chicas de 576 a 767px */
     @media(min-width: 768px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -132,31 +135,35 @@ p{
 
 
 /* Inicio media queries para html productos */
-/* Celulares y tabletas chicas de 576 a 767px */
-@media(min-width: 576px){
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-main-productos{
     .imgProductos{
-        width: 90%;
+        max-width: 400px;
     }
-}
 
-/* Tablet de 10" 768 a 1023px */
-@media(min-width: 768px){
-    .imgProductos{
-        width: 80%;
+    /* Celulares y tabletas chicas de 576 a 767px */
+    @media(min-width: 576px){
+        // .imgProductos{
+        //     width: 90%;
+        // }
     }
-}
 
-/* Notebook y Pc de escritorio 1024px en adelante */
-@media(min-width: 1024px){
-    .imgProductos{
-        width: 70%;
+    /* Tablet de 10" 768 a 1023px */
+    @media(min-width: 768px){
+        .imgProductos{
+            max-width: 700px;
+        }
+    }
+    @media(min-width: 1024px){
+        .imgProductos{
+            max-width: 70%;
+        }
     }
 }
 /* Fin media queries para html productos */
 
 
 /* Inicio media queries para html contacto */
-/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
 .cuadro-form{
     display: grid;
     grid-template-columns: 1fr;
@@ -165,7 +172,7 @@ p{
     "form"
     "ubicacion";  
 
-/* Tablet de 10" 768 a 1023px */
+/* Celulares y tabletas chicas de 576 a 767px */
     @media(min-width: 768px){
         padding: 60px;
         gap: 60px;

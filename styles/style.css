@@ -352,7 +352,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 90px;
 }
 
@@ -456,6 +456,8 @@ form button {
 }
 
 /* --------- Fin Pagina Contactos --------- */
+/* ---------- Inicio con la grilla area ----------*/
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
 /* Inicio media queries generales */
 /* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
 p {
@@ -544,7 +546,7 @@ p {
   grid-template-columns: 1fr;
   gap: 20px;
   grid-template-areas: "img" "p";
-  /* Tablet de 10" 768 a 1023px */
+  /* Celulares y tabletas chicas de 576 a 767px */
 }
 @media (min-width: 768px) {
   .antes-de-adoptar {
@@ -565,33 +567,33 @@ p {
 }
 /* Fin media queries para html nosotros */
 /* Inicio media queries para html productos */
-/* Celulares y tabletas chicas de 576 a 767px */
-@media (min-width: 576px) {
-  .imgProductos {
-    width: 90%;
-  }
+/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
+.grid-main-productos {
+  /* Celulares y tabletas chicas de 576 a 767px */
+  /* Tablet de 10" 768 a 1023px */
 }
-/* Tablet de 10" 768 a 1023px */
+.grid-main-productos .imgProductos {
+  max-width: 400px;
+}
 @media (min-width: 768px) {
-  .imgProductos {
-    width: 80%;
+  .grid-main-productos .imgProductos {
+    max-width: 700px;
   }
 }
-/* Notebook y Pc de escritorio 1024px en adelante */
 @media (min-width: 1024px) {
-  .imgProductos {
-    width: 70%;
+  .grid-main-productos .imgProductos {
+    max-width: 70%;
   }
 }
+
 /* Fin media queries para html productos */
 /* Inicio media queries para html contacto */
-/* Celulares chicos de 213 a 575px (menor a 213px empieza a romper */
 .cuadro-form {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
   grid-template-areas: "form" "ubicacion";
-  /* Tablet de 10" 768 a 1023px */
+  /* Celulares y tabletas chicas de 576 a 767px */
 }
 @media (min-width: 768px) {
   .cuadro-form {
@@ -679,6 +681,10 @@ hr {
 
 .imgProductos {
   grid-area: img-productos;
+}
+
+.articulo {
+  grid-area: articulo;
 }
 
 .titulo-productos {
