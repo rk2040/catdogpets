@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="../styles/style.css">
 
     <meta name="description" content="Encontra los mejores productos para el cuidado y bienestar de tus mascotas. Compra online o en nuestro showroom con cualquier medio de pago">
+    <meta name="keywords" content="PRODUCTOS, PRODUCTOS PARA MASCOTAS, VENTA, VENTA PRODUCTOS PARA MASCOTAS, PRODUCTOS PARA PERROS, PRODUCTOS PARA GATOS">
+    
     <title>Productos</title>
     <link rel="icon" href="../assets/img/logos/logoNav.ico">
 </head>
 <body>
     <header>
-        <div class="grid-header">
+        <div class="grid-header" id="inicio">
             <a href="../index.html">
                 <img class="logoNav" src="../assets/img/logos/logoNav.svg" alt="Logo pagina">
             </a>
@@ -50,14 +52,65 @@
             </nav>
         </div>
     </header>
+
+    <div class="flecha-inicio">
+        <a href="#inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </a>
+    </div>
+
     <main>
         <div class="grid-main-productos">
             <div class="titulo-productos">
                 <h1 class="display-1 text-center mt-1 ">Productos</h1>
             </div>
+
+            <section class="container-fluid">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="../assets/img/productos/arnesChampNegro.jpg" class="d-block w-100" alt="Arnes negro">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/img/productos/camaMoises.jpg" class="d-block w-100" alt="Cama moises mascota">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/img/productos/comederoDoble.jpg" class="d-block w-100" alt="Comedero doble mascota acero">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/img/productos/comederoMultiCatit.jpg" class="d-block w-100" alt="Comedero mascota multi cat">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/img/productos/correaRetractilRojo.jpg" class="d-block w-100" alt="Correa retractil">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/img/productos/cuchaRoja.jpg" class="d-block w-100" alt="Cucha roja">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
             <div class="imgProductos">
                 <div class="articulo">
-                    <img src="../assets/img/productos/arnesChampNegro.jpg" alt="">
+                    <img src="../assets/img/productos/arnesChampNegro.jpg" alt="Arnes negro">
                     <div class="datosArticulo">
                         <p>Arnés Ferplast Easy P Negro</p>
                         <p>$ 0 Precio del articulo</p>
@@ -66,7 +119,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/arnesErgoAzul.jpg" alt="">
+                    <img src="../assets/img/productos/arnesErgoAzul.jpg" alt="Arnes azul">
                     <div class="datosArticulo">
                         <p>Arnés Ferplast Ergocomfort Azul</p>
                         <p>$ 0 Precio del articulo</p>
@@ -75,7 +128,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/bozal.jpg" alt="">
+                    <img src="../assets/img/productos/bozal.jpg" alt="Bozal ajustable">
                     <div class="datosArticulo">
                         <p>Bozal Canasta Rast Ajustable</p>
                         <p>$ 0 Precio del articulo</p>
@@ -84,7 +137,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/camaMoises.jpg" alt="">
+                    <img src="../assets/img/productos/camaMoises.jpg" alt="Cama moises mascota">
                     <div class="datosArticulo">
                         <p>Moises WePets Panama Gris</p>
                         <p>$ 0 Precio del articulo</p>
@@ -93,7 +146,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/camperaCeleste.jpg" alt="">
+                    <img src="../assets/img/productos/camperaCeleste.jpg" alt="Campera celeste mascota">
                     <div class="datosArticulo">
                         <p>Campera Rascals Matelasse Celeste</p>
                         <p>$ 0 Precio del articulo</p>
@@ -102,7 +155,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/cardinaCurvo.jpg" alt="">
+                    <img src="../assets/img/productos/cardinaCurvo.jpg" alt="Cardina curva">
                     <div class="datosArticulo">
                         <p>Cardina Rast Curvo Azul doble</p>
                         <p>$ 0 Precio del articulo</p>
@@ -111,7 +164,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoAcero.jpg" alt="">
+                    <img src="../assets/img/productos/comederoAcero.jpg" alt="Comedero mascota acero">
                     <div class="datosArticulo">
                         <p>Comedero Inoxidable Lazydog N1</p>
                         <p>$ 0 Precio del articulo</p>
@@ -120,7 +173,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoDoble.jpg" alt="">
+                    <img src="../assets/img/productos/comederoDoble.jpg" alt="Comedero doble mascota acero">
                     <div class="datosArticulo">
                         <p>Comedero Inoxidable Doble Pawise</p>
                         <p>$ 0 Precio del articulo</p>
@@ -129,7 +182,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoDoblePLast.jpg" alt="">
+                    <img src="../assets/img/productos/comederoDoblePLast.jpg" alt="Comedero doble mascota plastico">
                     <div class="datosArticulo">
                         <p>Comedero Pawise Plastico Set 2</p>
                         <p>$ 0 Precio del articulo</p>
@@ -138,7 +191,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoIndividualCatit.jpg" alt="">
+                    <img src="../assets/img/productos/comederoIndividualCatit.jpg" alt="Comedero mascota acero">
                     <div class="datosArticulo">
                         <p>Comedero Para Perro Catit Inoxidable</p>
                         <p>$ 0 Precio del articulo</p>
@@ -147,7 +200,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoMadera.jpg" alt="">
+                    <img src="../assets/img/productos/comederoMadera.jpg" alt="Comedero mascota base madera">
                     <div class="datosArticulo">
                         <p>Comedero Animal Pet Base Madera</p>
                         <p>$ 0 Precio del articulo</p>
@@ -156,7 +209,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/comederoMultiCatit.jpg" alt="">
+                    <img src="../assets/img/productos/comederoMultiCatit.jpg" alt="Comedero mascota multi cat">
                     <div class="datosArticulo">
                         <p>comedero Multi Catit para gatos</p>
                         <p>$ 0 Precio del articulo</p>
@@ -165,7 +218,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/correaExtensibleNegro.jpg" alt="">
+                    <img src="../assets/img/productos/correaExtensibleNegro.jpg" alt="Correa negra">
                     <div class="datosArticulo">
                         <p>Correa Extensible Kong Negro</p>
                         <p>$ 0 Precio del articulo</p>
@@ -174,7 +227,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/correaRetractilRojo.jpg" alt="">
+                    <img src="../assets/img/productos/correaRetractilRojo.jpg" alt="Correa retractil">
                     <div class="datosArticulo">
                         <p>Correa Trail Kong Retráctil Rojo</p>
                         <p>$ 0 Precio del articulo</p>
@@ -183,7 +236,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/cuchaRoja.jpg" alt="">
+                    <img src="../assets/img/productos/cuchaRoja.jpg" alt="Cucha roja">
                     <div class="datosArticulo">
                         <p>Cucha grande Durapets Roja</p>
                         <p>$ 0 Precio del articulo</p>
@@ -192,7 +245,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/jugueteConPluma.jpg" alt="">
+                    <img src="../assets/img/productos/jugueteConPluma.jpg" alt="Juguete mascota con pluma">
                     <div class="datosArticulo">
                         <p>Juguete Cancat Plumas Verde</p>
                         <p>$ 0 Precio del articulo</p>
@@ -201,7 +254,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/jugueteKong.jpg" alt="">
+                    <img src="../assets/img/productos/jugueteKong.jpg" alt="juguete mascota kong">
                     <div class="datosArticulo">
                         <p>Juguete Kong Airdog Dumbbell</p>
                         <p>$ 0 Precio del articulo</p>
@@ -210,7 +263,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/jugueteMasajeador.jpg" alt="">
+                    <img src="../assets/img/productos/jugueteMasajeador.jpg" alt="Juguete mascota interactivo">
                     <div class="datosArticulo">
                         <p>Juguete Interactivo Ferplast Circulo Magico</p>
                         <p>$ 0 Precio del articulo</p>
@@ -219,7 +272,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/juguetePoste.jpg" alt="">
+                    <img src="../assets/img/productos/juguetePoste.jpg" alt="Juguete mascota poste">
                     <div class="datosArticulo">
                         <p>Juguete Pawise Cat Post 2 en 1</p>
                         <p>$ 0 Precio del articulo</p>
@@ -228,7 +281,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/literaCerrada.jpg" alt="">
+                    <img src="../assets/img/productos/literaCerrada.jpg" alt="Litera cerrada con filtro">
                     <div class="datosArticulo">
                         <p>Litera Cerrada Cancat Con Filtro De Carbono</p>
                         <p>$ 0 Precio del articulo</p>
@@ -237,7 +290,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/rascadorEnRampa.jpg" alt="">
+                    <img src="../assets/img/productos/rascadorEnRampa.jpg" alt="Rascador para gato">
                     <div class="datosArticulo">
                         <p>Rascador Para Gato En Rampa</p>
                         <p>$ 0 Precio del articulo</p>
@@ -246,7 +299,7 @@
                     </div>
                 </div>
                 <div class="articulo">
-                    <img src="../assets/img/productos/rascadorMedioCarton.jpg" alt="">
+                    <img src="../assets/img/productos/rascadorMedioCarton.jpg" alt="Rascador scratcher para gato">
                     <div class="datosArticulo">
                         <p>Rascador Scratcher Caterpillar Con Catnip</p>
                         <p>$ 0 Precio del articulo</p>

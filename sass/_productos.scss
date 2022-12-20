@@ -9,7 +9,7 @@
     max-width: auto;
 
     h1{
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     p{
@@ -17,12 +17,20 @@
         margin: 5px;
     }
 
-    img{
+    .container-fluid{
+        margin-bottom: 80px;
+    }
+    .carousel-inner{
+        border-radius: 30%;
+    }
+
+    .imgProductos img{
         @include maxw-height(100%, auto);
         border-radius: 30%;
         border: $color-secundario solid 5px;
     }
 }
+
 .articulo{
     max-width: 20em;
     margin: 40px 10px 40px 10px;
@@ -41,8 +49,8 @@
     font-size: 2em;
     margin-right: 5px;
     margin-bottom: 5px;
- }
- 
+}
+
 .botonComprar{
     @include medidas(5em, auto);
     font-size: 2em;

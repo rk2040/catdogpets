@@ -1,6 +1,6 @@
 /*  Colores logo para la pagina
     casiNegro   #2F2F3C
-    blanco      #F7F7F7
+    casiBlanco  #F7F7F7
     naranja     #FF6600
 */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;500;600;700;800&family=Pridi:wght@300;400;500;600;700&display=swap"); /* Reset */
@@ -23,6 +23,35 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-image: url(../assets/img/background/patitasYcorazones02.svg);
+}
+
+.flecha-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90%;
+  z-index: 10;
+  margin-right: 2%;
+}
+.flecha-inicio a svg {
+  color: blueviolet;
+}
+.flecha-inicio svg {
+  border: blueviolet solid 3px;
+  border-radius: 50%;
+  background-color: #2F2F3C;
+  opacity: 0.8;
+}
+
+.flecha-inicio :hover {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+  border-radius: 50%;
+  background-color: #FF6600;
+  opacity: 0.8;
 }
 
 h1, h2, h3 {
@@ -275,7 +304,8 @@ footer {
   margin-top: 60px;
 }
 .parrafo-index p {
-  padding: 60px;
+  padding: 5%;
+  text-align: justify;
 }
 
 /* Fin extend */
@@ -291,6 +321,10 @@ footer {
   flex-direction: column;
   max-width: 100%;
 }
+.grid-main ul li a {
+  list-style: none;
+  color: #2F2F3C;
+}
 
 /* extend */
 .antes-de-adoptar {
@@ -303,6 +337,9 @@ footer {
   align-items: center;
   padding: 10px;
 }
+.antes-de-adoptar p {
+  text-align: justify;
+}
 
 /* Fin extend */
 .grid-main-mascotas img {
@@ -314,7 +351,8 @@ footer {
 /* --------- Fin Pagina Cuidados --------- */
 /* extend */
 .sobre-nosotros p {
-  padding: 40px;
+  padding: 5%;
+  text-align: justify;
 }
 
 /* Fin extend */
@@ -329,13 +367,19 @@ footer {
   max-width: auto;
 }
 .grid-main-productos h1 {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .grid-main-productos p {
   font-size: 2em;
   margin: 5px;
 }
-.grid-main-productos img {
+.grid-main-productos .container-fluid {
+  margin-bottom: 80px;
+}
+.grid-main-productos .carousel-inner {
+  border-radius: 30%;
+}
+.grid-main-productos .imgProductos img {
   max-width: 100%;
   height: auto;
   border-radius: 30%;
@@ -535,6 +579,7 @@ p {
 @media (min-width: 768px) {
   .grid-main p {
     font-weight: 600;
+    padding: 60px;
   }
 }
 
@@ -575,9 +620,19 @@ p {
 .grid-main-productos .imgProductos {
   max-width: 400px;
 }
+@media (min-width: 576px) {
+  .grid-main-productos .imgProductos :hover img {
+    transition-duration: 0.8s;
+    transform: scale(2);
+  }
+}
 @media (min-width: 768px) {
   .grid-main-productos .imgProductos {
     max-width: 700px;
+  }
+  .grid-main-productos .carousel-inner {
+    max-width: 712px;
+    margin: auto;
   }
 }
 @media (min-width: 1024px) {

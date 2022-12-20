@@ -20,6 +20,38 @@ body{
     background-image: url(../assets/img/background/patitasYcorazones02.svg);
 }
 
+.flecha-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: sticky;
+    top: 90%;
+    z-index: 10;
+    margin-right: 2%;
+
+    a svg{
+        color: $color-detalles;
+    }
+
+    svg{
+        border: $color-detalles solid 3px;
+        border-radius: 50%;
+        background-color: $color-secundario;
+        opacity: 0.8;
+    }
+    
+}
+
+.flecha-inicio :hover{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+    border-radius: 50%;
+    background-color: $color-principal;
+    opacity: 0.8;
+}
+
+
 h1, h2, h3{
     color: $color-detalles;
     display: flex;

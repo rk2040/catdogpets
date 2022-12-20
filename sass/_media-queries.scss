@@ -96,6 +96,7 @@ p{
     @media(min-width: 768px){
         p{
             font-weight: 600;
+            padding: 60px;
         }
     }
 }
@@ -143,15 +144,23 @@ p{
 
     /* Celulares y tabletas chicas de 576 a 767px */
     @media(min-width: 576px){
-        // .imgProductos{
-        //     width: 90%;
-        // }
+        .imgProductos :hover{
+            img{
+                transition-duration: 0.8s;
+                transform: scale(2);
+            }
+        }
     }
 
     /* Tablet de 10" 768 a 1023px */
     @media(min-width: 768px){
         .imgProductos{
             max-width: 700px;
+        }
+
+        .carousel-inner{
+            max-width: 712px;
+            margin: auto;
         }
     }
     @media(min-width: 1024px){
